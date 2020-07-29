@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChitietThudonActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        app:title="Chi tiết thực đơn"
+        android:background="#84AACA"
+        android:layout_height="?attr/actionBarSize"/>
+    <EditText
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/toolbar"
+        android:lines="1"
+        android:maxLines="1"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:id="@+id/ed_tk"
+        android:hint="Nhập tên món ăn cần tìm"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/ed_tk"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

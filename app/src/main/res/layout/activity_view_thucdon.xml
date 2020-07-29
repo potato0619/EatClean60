@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#CFCFC9"
+    tools:context=".viewThucdonActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        app:title="Chi tiết thực đơn"
+        android:background="#84AACA"
+        android:layout_height="?attr/actionBarSize"/>
+    <ImageView
+        android:id="@+id/image"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_cemera"
+        android:layout_width="370dp"
+        android:layout_height="150dp"/>
+
+    <EditText
+        android:id="@+id/ed_tenMon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+android:editable="false"
+
+        android:layout_marginTop="20dp"
+        android:hint="nhập tên món"
+
+     />
+
+    <EditText
+        android:editable="false"
+        android:id="@+id/ed_mota"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="21dp"
+        android:gravity="top|left"
+        android:hint="thong tin mon ăn" />
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="9"
+    android:layout_marginTop="5dp"
+
+    >
+ <Button
+     android:layout_marginLeft="5dp"
+     android:background="#95D160"
+     android:layout_weight="3"
+        android:id="@+id/but_1"
+        android:text="thêm bữa sáng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#C8C822"
+        android:layout_weight="3"
+        android:id="@+id/but_2"
+        android:text="thêm bữa trưa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_marginRight="5dp"
+        android:background="#AFAF97"
+        android:layout_weight="3"
+        android:id="@+id/but_3"
+        android:text="thêm bữa tối"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
+
+
+</LinearLayout>

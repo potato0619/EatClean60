@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgrmenu"
+    android:orientation="vertical"
+    tools:context=".ThucdonActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:title=" "
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:gravity="center"
+        android:text="THỰC ĐƠN CỦA TÔI"
+        android:textColor="#478014"
+        android:textSize="29dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:gravity="center"
+        android:layout_marginTop="18dp"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:text="Hãy chọn một bữa ăn cho mình nào! "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/tey"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/buoisang2"></ImageView>
+                <TextView
+                    android:gravity="center"
+                    android:background="@drawable/tey"
+                    android:textColor="#0C0C0C"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:text="Buổi sáng"
+                    android:id="@+id/tv_buoisang"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/tey"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/buatrua2"></ImageView>
+                <TextView
+                    android:text="Buổi trưa"
+                    android:gravity="center"
+                    android:background="@drawable/tey"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:id="@+id/tv_buoitrua"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/tey"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/buatoi"></ImageView>
+                <TextView
+                    android:layout_marginRight="15dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:background="@drawable/tey"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:text="Buổi tối"
+                    android:id="@+id/tv_buoitoi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

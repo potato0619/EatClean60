@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9F8E3"
+    tools:context=".AddActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:title="Thêm món ăn"
+        android:background="#6780DA"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+
+    <ImageView
+        android:layout_below="@id/toolbar"
+        android:id="@+id/image"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_cemera"
+        android:layout_width="300dp"
+        android:layout_height="150dp"/>
+    <EditText
+        android:id="@+id/ed_tenMon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+
+        android:hint="Nhập tên món:" />
+
+    <EditText
+        android:id="@+id/ed_mota"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/ed_tenMon"
+        android:layout_marginTop="21dp"
+        android:gravity="top|left"
+        android:hint="Thông Tin Món Ăn:" />
+
+    <Button
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+android:layout_marginTop="5dp"
+        android:id="@+id/but"
+        android:background="#E3DBDB"
+        android:text="thêm vào thực đơn"
+        android:layout_below="@+id/ed_mota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

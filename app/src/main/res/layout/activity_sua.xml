@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SuaActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        app:title="Chi tiết món ăn"
+        android:background="#84AACA"
+        android:layout_height="?attr/actionBarSize"/>
+    <ImageView
+        android:layout_below="@id/toolbar"
+        android:id="@+id/image"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_cemera"
+        android:layout_width="400dp"
+        android:layout_height="100dp"/>
+    <EditText
+        android:layout_below="@id/image"
+        android:editable="false"
+        android:id="@+id/ed_tenMon"
+        android:layout_marginTop="1dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:hint="nhập tên món"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"/>
+    <Spinner
+        android:visibility="visible"
+        android:id="@+id/spinner"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/ed_tenMon"
+        android:layout_below="@id/ed_tenMon"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:gravity="top"
+        android:editable="false"
+        android:id="@+id/ed_mota"
+        android:layout_marginTop="5dp"
+        android:hint="thong tin mon ăn"
+        android:layout_below="@id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"/>
+    <Button
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:textColor="#F6EFEF"
+        android:id="@+id/but"
+        android:layout_width="198dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/ed_mota"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="114dp"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="99dp"
+        android:background="#BAB6B6"
+        android:text="Xóa" />
+    <!--    <Button-->
+<!--        android:id="@+id/but1"-->
+<!--        android:layout_marginLeft="150dp"-->
+<!--        android:background="#EC0505"-->
+<!--        android:text="sửa"-->
+<!--        android:layout_toRightOf="@id/but"-->
+<!--        android:layout_below="@+id/ed_mota"-->
+<!--        android:layout_width="70dp"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+</RelativeLayout>
