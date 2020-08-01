@@ -131,9 +131,9 @@ public class AddActivity extends AppCompatActivity {
     }
     public void thongbao(String nd){
         AlertDialog.Builder builder=new AlertDialog.Builder(AddActivity.this);
-        builder.setTitle("thông báo");
-        builder.setMessage("dữ liệu ở ô "+nd+"còn thiếu!!");
-        builder.setNegativeButton("xác nhận", new DialogInterface.OnClickListener() {
+        builder.setTitle("Thông báo");
+        builder.setMessage("Dữ liệu ở ô "+nd+"còn thiếu!!");
+        builder.setNegativeButton("Xác nhận", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
 
